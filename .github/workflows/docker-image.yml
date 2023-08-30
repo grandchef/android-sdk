@@ -43,6 +43,6 @@ jobs:
         # Use Docker `latest` tag convention
         [ "$VERSION" == "master" ] && VERSION=latest
 
-        echo "Pushing image $IMAGE_ID:$VERSION-nodejs-ruby"
-        docker tag $IMAGE_NAME_ANDROID_SDK $IMAGE_ID:$VERSION-nodejs-ruby
-        docker push $IMAGE_ID:$VERSION-nodejs-ruby
+        echo "Pushing image $IMAGE_ID:$VERSION-nodejs"
+        docker tag $IMAGE_NAME_ANDROID_SDK $IMAGE_ID:$VERSION-nodejs
+        docker push $IMAGE_ID:$VERSION-nodejs
